@@ -8,6 +8,9 @@ public class Main {
         System.out.print("Input the second number: ");
         int num2 = in.nextInt();
         int total = num1 + num2;
-        System.out.println("Your total is :" + total);
+        System.out.print("Enter your name: ");
+        in.nextLine();
+        String str1 = in.nextLine();
+        System.out.println(str1 + " your total is :" + total);
     }
 }
