@@ -2,9 +2,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("   J    a   v     v  a ");
-        System.out.println("   J   a a   v   v  a a");
-        System.out.println("J  J  aaaaa   V V  aaaaa");
-        System.out.println(" JJ  a     a   V  a     a");
+//        p = 2πr
+//        A = π r²
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input radius : ");
+        double radius = in.nextDouble();
+        double p = 2 * Math.PI * radius;
+        double a = Math.PI * radius * radius;
+
+        System.out.println("The perimeter is : " + p);
+        System.out.println("The area is : " +a);
+        }
     }
-}
