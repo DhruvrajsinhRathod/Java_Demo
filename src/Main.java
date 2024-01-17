@@ -7,10 +7,10 @@ public class Main {
         int num1 = in.nextInt();
         System.out.print("Input the second number: ");
         int num2 = in.nextInt();
-        int total = num1 + num2;
-        System.out.print("Enter your name: ");
-        in.nextLine();
-        String str1 = in.nextLine();
-        System.out.println(str1 + " your total is :" + total);
+        System.out.println(num1 + "+" + num2 + "=" + (num1+num2));
+        System.out.println(num1 + "-" + num2 + "=" + (num1-num2));
+        System.out.println(num1 + "*" + num2 + "=" + (num1*num2));
+        System.out.println(num1 + "/" + num2 + "=" + (num1/num2));
+        System.out.println(num1 + "%" + num2 + "=" + (num1%num2));
     }
 }
