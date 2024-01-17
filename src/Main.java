@@ -3,21 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Input a : ");
-        int number1 = in.nextInt();
-        System.out.print("Input b : ");
-        int number2 = in.nextInt();
-        if (number1 == number2)
-            System.out.println(number1 + "==" + number2);
-        if (number1 != number2)
-            System.out.println(number1 + "!=" + number2);
-        if (number1 < number2)
-            System.out.println(number1 + "<" + number2);
-        if (number1 > number2)
-            System.out.println(number1 + ">" + number2);
-        if (number1 <= number2)
-            System.out.println(number1 + "<=" + number2);
-        if (number1 >= number2)
-            System.out.println(number1 + ">=" + number2);
+        System.out.print("Input the number : ");
+        int n = in.nextInt();
+        int sum = 0;
+        while (n != 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        System.out.println("The sum of " + n + " is : "+ sum);
     }
-    }
+}
