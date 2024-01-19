@@ -2,12 +2,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Input the string : ");
+        System.out.print("Input the number : ");
         int n = in.nextInt();
-        for(int i = 1;i<=n;i++){
-            if(i%2!=0){
-                System.out.println(i);
-            }
+        if(n%2==0){
+            System.out.println("This is even.");
+        }
+        else {
+            System.out.println("This is odd.");
         }
     }
 }
