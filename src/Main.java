@@ -2,18 +2,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Input first : ");
-        int num1 = in.nextInt();
-        System.out.print("Input second : ");
-        int num2 = in.nextInt();
-        System.out.print("Input third : ");
-        int num3 = in.nextInt();
-
-        if(num1+num2==num3){
-            System.out.println("True");
-        }
-        else{
-            System.out.println("False");
-        }
+        System.out.print("Input seconds : ");
+        int seconds = in.nextInt();
+        int S = seconds % 60;  // Calculate the remaining seconds
+        int H = seconds / 60;  // Convert total seconds to minutes
+        int M = H % 60;         // Calculate the remaining minutes
+        H = H / 60;            // Convert total minutes to hours
+        System.out.print(H + ":" + M + ":" + S);
     }
 }
