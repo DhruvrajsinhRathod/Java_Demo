@@ -9,17 +9,12 @@ public class Dhruv {
         int two = in.nextInt();
         System.out.println("Enter The Third Number : ");
         int three = in.nextInt();
-        System.out.println("The largest number is : " + Smallest(one, two, three));
+        System.out.println("The average is : " + Average(one, two, three));
     }
 
-    public static int Smallest(int one, int two, int three) {
-        int large = one;
-        if (two > large) {
-            large = two;
-        }
-        if(three > large){
-            large = three;
-        }
-        return large;
+    public static int Average(int one, int two, int three) {
+        int total = one + two + three;
+        int grand = total/3;
+        return grand;
     }
 }
